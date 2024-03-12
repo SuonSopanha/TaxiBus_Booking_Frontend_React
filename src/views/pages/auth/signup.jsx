@@ -33,19 +33,7 @@ const Signup = () => {
                 Create your account. It's free and only takes a minute.
               </p>
               <form id="registrationForm" action="#">
-                <div class="mt-4 grid grid-cols-2 gap-4">
-                  <label for="select" class="text-gray-600">
-                    Select User Type:
-                  </label>
-                  <select
-                    id="select"
-                    class="border border-gray-400 py-1 px-2 w-full"
-                    onchange="toggleFormElements()"
-                  >
-                    <option value="user">User</option>
-                    <option value="driver">Driver</option>
-                  </select>
-                </div>
+
                 <div class="mt-4">
                   <input
                     type="text"
