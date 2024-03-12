@@ -4,65 +4,20 @@ const Login = () => {
   return (
     <>
       <div
-        class="hidden md:hidden fixed top-0 left-0 w-1/2 h-full bg-black/50"
-        id="responsiveMenu"
-      >
-        <div class="flex items-center justify-center h-full border-b border-white">
-          <div class="flex flex-col items-center text-white w-full font-semibold">
-            <a
-              href="#"
-              class="flex justify-center w-full my-1 border rounded py-2 hover:bg-yellow-500"
-            >
-              Home
-            </a>
-            <a
-              href="#"
-              class="flex justify-center w-full my-1 border rounded py-2 hover:bg-yellow-500"
-            >
-              Booking
-            </a>
-            <a
-              href="#"
-              class="flex justify-center w-full my-1 border rounded py-2 hover:bg-yellow-500"
-            >
-              Services
-            </a>
-            <a
-              href="#"
-              class="flex justify-center w-full my-1 border rounded py-2 hover:bg-yellow-500"
-            >
-              Project
-            </a>
-            <a
-              href="#"
-              class="flex justify-center w-full my-1 border rounded py-2 hover:bg-yellow-500"
-            >
-              Account
-            </a>
-            <button
-              id="closeMenu"
-              class="ml-2 text-white hover:bg-yellow-500 hover:text-black focus:outline-none hidden"
-            >
-              <svg
-                viewBox="0 0 24 24"
-                class="h-6 w-6 fill-current"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12Z"></path>
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
-      <div
         class="min-h-screen py-40 bg-cover bg-no-repeat"
-        style="background-image: linear-gradient(rgba(25, 44, 154, 0.444), rgba(0, 0, 0, 0.5)), url(image/Slide_3.jpg)"
+        style={{
+          backgroundImage:
+            "linear-gradient(rgba(25, 44, 154, 0.444), rgba(0, 0, 0, 0.5)), url(image/Slide_3.jpg)",
+        }}
       >
         <div class="container max-auto">
           <div class="flex flex-col lg:flex-row w-10/12 lg:w-8/12 bg-white rounded-xl mx-auto shadow-lg overflow-hidden">
             <div
               class="w-full lg:w-1/2 flex flex-col items-center justify-center p-12 bg-no-repeat bg-center bg-cover"
-              style="background-image: linear-gradient(rgba(34, 98, 215, 0.319), rgba(20, 48, 134, 0.642)), url(image/Slide_3.jpg)"
+              style={{
+                backgroundImage:
+                  "linear-gradient(rgba(34, 98, 215, 0.319), rgba(20, 48, 134, 0.642)), url(image/Slide_3.jpg)",
+              }}
             >
               <h1 class="text-white text-3xl font-medium">Welcome</h1>
               <div>
@@ -121,3 +76,5 @@ const Login = () => {
     </>
   );
 };
+
+export default Login;
