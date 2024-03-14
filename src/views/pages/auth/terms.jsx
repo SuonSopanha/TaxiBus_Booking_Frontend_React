@@ -5,7 +5,7 @@ const Terms = () => {
     <div>
       <div class="min-h-screen py-40">
         <div class="container max-auto">
-          <div class="flex w-10/12 lg:w-8/12 bg-white rounded-xl mx-auto shadow-lg overflow-hidden">
+          <div class="flex w-10/12 lg:w-8/12 bg-white rounded-xl mx-auto shadow-lg overflow-hidden text-start">
             <div class="w-full py-16 px-12">
               <h2 class="text-3xl font-medium">Terms and Conditions</h2>
               <p class="text-gray-700 text-sm mt-4">

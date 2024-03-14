@@ -12,11 +12,12 @@ import TaxiProfile from "./pages/taxi/taxiProfile";
 import ResetPassword from "./pages/user/resetPassword";
 import DriveRegister from "./pages/user/driveRegister";
 import Terms from "./pages/auth/terms";
+import Compare from "./pages/user/compare";
 
 const Content = () => {
   return (
     <>
-        <Terms/>  
+        <Compare/>
     </>
   );
 };
