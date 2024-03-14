@@ -9,11 +9,12 @@ import BookingForm from "./pages/booking/bookingForm";
 import BookingReciept from "./pages/booking/bookingReciept";
 import BookingRequest from "./pages/booking/bookingRequest";
 import TaxiProfile from "./pages/taxi/taxiProfile";
+import ResetPassword from "./pages/user/resetPassword";
 
 const Content = () => {
   return (
     <>
-        <TaxiProfile />
+        <ResetPassword/>
     </>
   );
 };
