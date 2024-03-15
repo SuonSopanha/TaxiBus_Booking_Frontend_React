@@ -366,7 +366,7 @@ const BusList = () => {
                         </div>
                       </div>
                       <div class="my-6 flex items-center justify-center">
-                        <a href="taxiAndBusProfile.html">
+                        <a href="/bus-detail">
                           <button class="h-10 w-28 rounded-3xl border-2 border-black bg-amber-200 text-sm font-medium hover:border-amber-200">
                             Find Now
                           </button>
@@ -477,7 +477,7 @@ const BusList = () => {
                         </div>
                       </div>
                       <div class="my-6 flex items-center justify-center">
-                        <a href="taxiAndBusProfile.html">
+                        <a href="/bus-detail">
                           <button class="h-10 w-28 rounded-3xl border-2 border-black bg-amber-200 text-sm font-medium hover:border-amber-200">
                             View Details
                           </button>
@@ -588,7 +588,7 @@ const BusList = () => {
                         </div>
                       </div>
                       <div class="my-6 flex items-center justify-center">
-                        <a href="taxiAndBusProfile.html">
+                        <a href="/bus-detail">
                           <button class="h-10 w-28 rounded-3xl border-2 border-black bg-amber-200 text-sm font-medium hover:border-amber-200">
                             View Details
                           </button>
@@ -699,7 +699,7 @@ const BusList = () => {
                         </div>
                       </div>
                       <div class="my-6 flex items-center justify-center">
-                        <a href="taxiAndBusProfile.html">
+                        <a href="/bus-detail">
                           <button class="h-10 w-28 rounded-3xl border-2 border-black bg-amber-200 text-sm font-medium hover:border-amber-200">
                             View Details
                           </button>

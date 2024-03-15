@@ -590,14 +590,14 @@ const Homepage = () => {
             </div>
           </div>
 
-          <div class="-mt-36 flex w-full items-center justify-center bg-gradient-to-t from-yellow-500 to-amber-50">
+          {/* <div class="-mt-36 flex w-full items-center justify-center bg-gradient-to-t from-yellow-500 to-amber-50">
             <a href="#">
               <button class="relative mb-8 mt-44 flex h-12 w-40 items-center justify-center overflow-hidden rounded-lg bg-gradient-to-r from-sky-800 to-sky-400 text-sm font-medium text-white shadow-lg shadow-slate-500 hover:border-2 hover:border-yellow-400">
                 See More
                 <div class="absolute right-0 mt-12 h-14 w-14 translate-x-1/2 transform rounded-full bg-blue-800"></div>
               </button>
             </a>
-          </div>
+          </div> */}
         </div>
 
         <div class="flex h-full items-center justify-center bg-white p-10">
