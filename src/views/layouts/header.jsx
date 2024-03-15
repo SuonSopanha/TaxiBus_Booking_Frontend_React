@@ -1,6 +1,15 @@
 import React from "react";
+import { useState } from "react";
+import SearchBar from "../components/searchBar";
+
 
 const Header = () => {
+  const [openSearchBar, setOpenSearchBar] = useState(false);
+
+  const toggleSearchBar = () => {
+    setOpenSearchBar(!openSearchBar);
+  };
+  
   return (
     <>
       <nav class="absolute left-0 top-0 w-full bg-black/10 p-4 md:px-6 lg:px-12 xl:px-24">
@@ -119,6 +128,9 @@ const Header = () => {
               <button
                 class="ml-2 rounded bg-white p-2 hover:bg-yellow-500"
                 id="search"
+                onClick={() => {
+                  toggleSearchBar();
+                }}
               >
                 <a href="#searchSection" class="text-black">
                   <svg
@@ -238,6 +250,10 @@ const Header = () => {
           </div>
         </div>
       </div>
+
+      {openSearchBar && <SearchBar/>}
+
+
     </>
   );
 };
