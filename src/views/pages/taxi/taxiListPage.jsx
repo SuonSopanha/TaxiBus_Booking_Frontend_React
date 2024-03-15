@@ -202,7 +202,7 @@ const TaxiList = () => {
             </form>
           </div>
     
-          <div class=" mt-60 h-fit"></div>
+          <div class=" mt-48 h-fit"></div>
           <div class="relative">
             <div class="relative bg-white pt-2">
               <div class="text-center text-2xl font-medium"></div>

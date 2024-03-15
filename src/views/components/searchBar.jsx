@@ -41,7 +41,7 @@ const SearchBar = () => {
   };
 
   return (
-    <div className="search-bar mt-20">
+    <div className="search-bar mt-20 -mb-20">
       <form className="max-w-xl mx-auto" onSubmit={handleSubmit}>
         <div className="flex items-center justify-center">
           <div className="bg-black bg-opacity-50 px-5 py-5 rounded-lg shadow-lg ">

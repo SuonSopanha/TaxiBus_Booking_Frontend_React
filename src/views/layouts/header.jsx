@@ -1,47 +1,45 @@
 import React from "react";
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
 import SearchBar from "../components/searchBar";
-
 
 const Header = () => {
   const [openSearchBar, setOpenSearchBar] = useState(false);
-  const [textColor, setTextColor] = useState('text-white');
-  const [backgroundColor, setBackgroundColor] = useState('bg-black/10');
+  const [textColor, setTextColor] = useState("text-white");
+  const [backgroundColor, setBackgroundColor] = useState("bg-black/10");
 
   const toggleSearchBar = () => {
     setOpenSearchBar(!openSearchBar);
   };
 
-  
-
   useEffect(() => {
     function handleScroll() {
       const scrollPosition = window.scrollY;
 
-
       // Change text color when scroll position exceeds threshold
-      if (scrollPosition > 100 ) {
-        setTextColor('text-black');
-        setBackgroundColor('bg-gray-200');
+      if (scrollPosition > 100) {
+        setTextColor("text-black");
+        setBackgroundColor("bg-gray-200");
         console.log(scrollPosition);
       } else {
-        setTextColor('text-white');
-        setBackgroundColor('bg-black/10');
+        setTextColor("text-white");
+        setBackgroundColor("bg-black/10");
       }
     }
 
     // Add event listener for scroll
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     // Clean up event listener on component unmount
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []); // Empty dependency array to run effect only once
-  
+
   return (
     <>
-      <nav class={`fixed left-0 top-0 w-full ${backgroundColor} p-4 md:px-6 lg:px-12 xl:px-24 z-50 ${textColor}`}>
+      <nav
+        class={`fixed left-0 top-0 w-full ${backgroundColor} p-4 md:px-6 lg:px-12 xl:px-24 z-50 ${textColor}`}
+      >
         <div class="container mx-auto">
           <div class="flex items-center justify-between font-semibold">
             <div class="hidden md:flex">
@@ -52,7 +50,12 @@ const Header = () => {
               </div>
               <span class="text-gray-400">|</span>
               <div class="inline h-8 hover:border-b-2">
-                <a href="TaxiService.html" class="mx-4">
+                <a
+                  class="mx-4"
+                  onClick={() => {
+                    toggleSearchBar();
+                  }}
+                >
                   Booking
                 </a>
               </div>
@@ -280,9 +283,7 @@ const Header = () => {
         </div>
       </div>
 
-      {openSearchBar && <SearchBar/>}
-
-
+      {openSearchBar && <SearchBar />}
     </>
   );
 };
