@@ -16,6 +16,7 @@ import Terms from "./pages/auth/terms";
 import Compare from "./pages/user/compare";
 import HomePage from "./pages/homePage";
 import TaxiList from "./pages/taxi/taxiListPage";
+import SearchBar from "./components/searchBar";
 
 const Content = () => {
   return (
@@ -37,6 +38,8 @@ const Content = () => {
         <Route path="/drive-register" element={<DriveRegister />} />
         <Route path="/terms" element={<Terms />} />
         <Route path="/compare" element={<Compare />} />
+        <Route path="/search-bar" element={<SearchBar />} />
+
       </Routes>
     </Router>
   );
