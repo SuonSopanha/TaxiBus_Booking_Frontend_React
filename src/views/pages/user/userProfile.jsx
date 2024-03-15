@@ -3,7 +3,7 @@ import React from "react";
 const UserProfile = () => {
   return (
     <div>
-      <div class="relative">
+      <div class="relative mt-20">
         <div class="relative bg-black bg-opacity-50 py-10">
           <div class="mx-auto flex flex-col justify-center space-y-4 p-4 md:flex-row md:space-x-5 md:space-y-0">
             <div class="relative rounded-lg bg-white">

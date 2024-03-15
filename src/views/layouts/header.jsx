@@ -8,7 +8,7 @@ const Header = () => {
           <div class="flex items-center justify-between font-semibold">
             <div class="hidden text-white md:flex">
               <div class="inline h-8 hover:border-b-2">
-                <a href="homePage.html" class="mx-4">
+                <a href="/" class="mx-4">
                   Home
                 </a>
               </div>
@@ -20,13 +20,13 @@ const Header = () => {
               </div>
               <span class="text-gray-400">|</span>
               <div class="inline h-8 hover:border-b-2">
-                <a href="taxiService.html" class="mx-4">
+                <a href="/bus-list" class="mx-4">
                   Services
                 </a>
               </div>
               <span class="text-gray-400">|</span>
               <div class="inline h-8 hover:border-b-2">
-                <a href="userProfile.html" class="mx-4">
+                <a href="/user-profile" class="mx-4">
                   Account
                 </a>
               </div>

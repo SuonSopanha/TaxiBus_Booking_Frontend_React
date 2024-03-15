@@ -621,7 +621,7 @@ const Homepage = () => {
                     <br />
                     passengers at designated stops.
                   </p>
-                  <a href="busService.html">
+                  <a href="/taxi-list">
                     <button class="mb-10 mt-5 h-10 w-28 rounded-3xl border-2 border-black text-sm font-medium hover:bg-amber-200">
                       Find Now
                     </button>
@@ -647,7 +647,7 @@ const Homepage = () => {
                     <br />
                     hire a private vehicle for personal travel.
                   </p>
-                  <a href="taxiService.html">
+                  <a href="/taxi-list">
                     <button class="mb-10 mt-5 h-10 w-28 rounded-3xl border-2 border-black text-sm font-medium hover:bg-amber-200">
                       Find Now
                     </button>

@@ -793,4 +793,4 @@ const TaxiList = () => {
 }
 
 
-export default TaxiList
+export default TaxiList;
