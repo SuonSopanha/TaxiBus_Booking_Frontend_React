@@ -3,7 +3,7 @@ import React from "react";
 const AdminDashboard = () => {
   return (
     <div>
-      <main class="flex h-full overflow-hidden pt-16">
+      <main class="flex h-full overflow-hidden pt-20 -z-10">
         <aside
           id="default-sidebar"
           class="fixed left-0 z-20 w-64 h-full transition-transform -translate-x-full sm:translate-x-0"

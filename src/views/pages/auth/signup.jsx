@@ -79,7 +79,7 @@ const Signup = () => {
                   <input type="checkbox" class="border border-gray-400"></input>
                   <span class="ml-2">
                     I agree with the{" "}
-                    <a href="TermsandConditions.html" class="text-blue-500">
+                    <a href="/terms" class="text-blue-500">
                       terms and conditions
                     </a>
                   </span>

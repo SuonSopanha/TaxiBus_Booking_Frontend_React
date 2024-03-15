@@ -1,21 +1,50 @@
 import React from "react";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import SearchBar from "../components/searchBar";
 
 
 const Header = () => {
   const [openSearchBar, setOpenSearchBar] = useState(false);
+  const [textColor, setTextColor] = useState('text-white');
+  const [backgroundColor, setBackgroundColor] = useState('bg-black/10');
 
   const toggleSearchBar = () => {
     setOpenSearchBar(!openSearchBar);
   };
+
+  
+
+  useEffect(() => {
+    function handleScroll() {
+      const scrollPosition = window.scrollY;
+
+
+      // Change text color when scroll position exceeds threshold
+      if (scrollPosition > 100 ) {
+        setTextColor('text-black');
+        setBackgroundColor('bg-gray-200');
+        console.log(scrollPosition);
+      } else {
+        setTextColor('text-white');
+        setBackgroundColor('bg-black/10');
+      }
+    }
+
+    // Add event listener for scroll
+    window.addEventListener('scroll', handleScroll);
+
+    // Clean up event listener on component unmount
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []); // Empty dependency array to run effect only once
   
   return (
     <>
-      <nav class="absolute left-0 top-0 w-full bg-black/10 p-4 md:px-6 lg:px-12 xl:px-24">
+      <nav class={`fixed left-0 top-0 w-full ${backgroundColor} p-4 md:px-6 lg:px-12 xl:px-24 z-50 ${textColor}`}>
         <div class="container mx-auto">
           <div class="flex items-center justify-between font-semibold">
-            <div class="hidden text-white md:flex">
+            <div class="hidden md:flex">
               <div class="inline h-8 hover:border-b-2">
                 <a href="/" class="mx-4">
                   Home
@@ -41,7 +70,7 @@ const Header = () => {
               </div>
             </div>
             <div class="hidden items-center space-x-5 md:flex">
-              <a href="#" class="text-white hover:text-yellow-500">
+              <a href="#" class=" hover:text-yellow-500">
                 <svg
                   class="h-4 w-4"
                   aria-hidden="true"
@@ -57,7 +86,7 @@ const Header = () => {
                 </svg>
                 <span class="sr-only">Facebook page</span>
               </a>
-              <a href="#" class="text-white hover:text-yellow-500">
+              <a href="#" class=" hover:text-yellow-500">
                 <svg
                   class="h-4 w-4"
                   aria-hidden="true"
@@ -69,7 +98,7 @@ const Header = () => {
                 </svg>
                 <span class="sr-only">Discord community</span>
               </a>
-              <a href="#" class="text-white hover:text-yellow-500">
+              <a href="#" class=" hover:text-yellow-500">
                 <svg
                   class="h-4 w-4"
                   aria-hidden="true"
@@ -85,7 +114,7 @@ const Header = () => {
                 </svg>
                 <span class="sr-only">Twitter page</span>
               </a>
-              <a href="#" class="text-white hover:text-yellow-500">
+              <a href="#" class=" hover:text-yellow-500">
                 <svg
                   class="h-4 w-4"
                   aria-hidden="true"
@@ -101,7 +130,7 @@ const Header = () => {
                 </svg>
                 <span class="sr-only">GitHub account</span>
               </a>
-              <a href="#" class="text-white hover:text-yellow-500">
+              <a href="#" class=" hover:text-yellow-500">
                 <svg
                   class="h-4 w-4"
                   aria-hidden="true"
@@ -121,7 +150,7 @@ const Header = () => {
                 class="rounded bg-white px-4 py-2 font-bold text-black hover:bg-yellow-500"
                 id="login"
               >
-                <a href="Login.html" class="text-black">
+                <a href="/login" class="text-black">
                   Login
                 </a>
               </button>
