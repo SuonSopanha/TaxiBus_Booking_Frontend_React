@@ -17,6 +17,7 @@ import Compare from "./pages/user/compare";
 import HomePage from "./pages/homePage";
 import TaxiList from "./pages/taxi/taxiListPage";
 import SearchBar from "./components/searchBar";
+import TaxiDetail from "./pages/taxi/taxiDetail";
 
 const Content = () => {
   return (
@@ -39,6 +40,7 @@ const Content = () => {
         <Route path="/terms" element={<Terms />} />
         <Route path="/compare" element={<Compare />} />
         <Route path="/search-bar" element={<SearchBar />} />
+        <Route path="/taxi-detail" element={<TaxiDetail />} />
 
       </Routes>
     </Router>
