@@ -19,6 +19,7 @@ import TaxiList from "./pages/taxi/taxiListPage";
 import SearchBar from "./components/searchBar";
 import TaxiDetail from "./pages/taxi/taxiDetail";
 import AdminDashboard from "./pages/admin/adminDashboard";
+import BusFeedback from "./pages/bus/busFeedback";
 
 const Content = () => {
   return (
@@ -43,6 +44,7 @@ const Content = () => {
         <Route path="/search-bar" element={<SearchBar />} />
         <Route path="/taxi-detail" element={<TaxiDetail />} />
         <Route path="/admin-dashboard" element={<AdminDashboard />} />
+        <Route path="/bus-feedback" element={<BusFeedback />} />
 
       </Routes>
     </Router>
